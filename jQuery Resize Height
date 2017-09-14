@@ -1,0 +1,7 @@
+function hd() {
+	$(".main-head").css("height", $(window).height());
+};
+hd();
+$(window).resize(function() {
+		hd();
+});
