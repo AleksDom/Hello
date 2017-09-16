@@ -169,7 +169,7 @@ JS//
 
 
 	//toggle-mnu//
-	$(".toggle-mnu").click(function() {
+	$(".toggle-mnu").click(function theToggle() {
 		$(this).toggleClass("on");
 		$(".menu").slideToggle();
 		$(".top-text").toggleClass("on");
