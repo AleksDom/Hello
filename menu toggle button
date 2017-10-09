@@ -76,9 +76,8 @@ JS//
 		$(".top-text").toggleClass("on");
 	
 	});
-	var theToggle = document.getElementById('toggle-mnu');
-
-	theToggle.onclick = function() {
+	
+	$(".toggle-mnu").onclick = function() {
 		toggleClass(this, 'on');
 		toggleClass(".top-text", 'on');
 		return false;
