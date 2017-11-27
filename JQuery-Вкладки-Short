@@ -1,26 +1,26 @@
-<DIV класс = "обертка">
-  <DIV класс = "Вкладки">
-    <Класс "вкладка" диапазон => Вкладка 1 </ SPAN>
-    <Класс "вкладка" диапазон => Вкладка 2 </ SPAN>
-    <Класс "вкладка" диапазон => 3 Вкладка </ SPAN>
-  </ DIV>
-  <DIV класс = "tab_content">
-    <DIV класс = "tab_item"> Содержимое 1 </ DIV>
-    <DIV класс = "tab_item"> 2 Содержимое </ DIV>
-    <DIV класс = "tab_item"> 3 Содержимое </ DIV>
-  </ DIV>  
-</ DIV>
+<div class="wrapper">
+  <div class="tabs">
+    <span class="tab">Вкладка 1</span>
+    <span class="tab">Вкладка 2</span>
+    <span class="tab">Вкладка 3</span>
+  </div>
+  <div class="tab_content">
+    <div class="tab_item">Содержимое 1</div>
+    <div class="tab_item">Содержимое 2</div>
+    <div class="tab_item">Содержимое 3</div>
+  </div>  
+</div>
 
-<Скрипт>
-$ ( "Обертка .tab"). Нажмите (функция () {
-  .. $ ( "Обертка .tab ") removeClass (" активный ") экв ($ (это) .index ()) addClass (" активный").
-  $ ( "Tab_item"). Скрыть (). Эк ($ (это) .index ()). FadeIn ()
-.}) Э (0) .addClass ( "активный");
-</ Скрипт>
+<script>
+$(".wrapper .tab").click(function() {
+  $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+  $(".tab_item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
+</script>
 
-<Стиль>
-.wrapper .active {цвета: красный; }
-.tab {дисплей: встроенный блок; вертикально-Align: снизу; курсор: указатель}
-.tab_item {дисплей: нет; }
-.tab_item: первый ребенок {дисплей: блок; }
-</ Стиль>
+<style>
+.wrapper .active { color: red; }
+.tab { display: inline-block; vertical-align: bottom; cursor: pointer }
+.tab_item { display: none; }
+.tab_item:first-child { display:block; }
+</style>
