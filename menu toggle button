@@ -57,8 +57,7 @@ SASS
 .toggle-mnu.on span:after 
 	transform: rotate(-45deg) translate(7px, -8px)
 
-.toggle-mnu.on + .menu
-	display: block
+
 .menu
 	display: none	
 
@@ -75,10 +74,7 @@ JS//
 	$(".toggle-mnu").click(function() {
 		$(this).toggleClass("on");
 		$(".menu").slideToggle();
+		return false;
 	
 	});
-	
-	$(".toggle-mnu").onclick = function() {
-		toggleClass(this, 'on');
-		return false;
-	};
+
