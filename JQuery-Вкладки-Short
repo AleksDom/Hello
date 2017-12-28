@@ -11,6 +11,19 @@
   </div>  
 </div>
 
+////PUG////
+.product-tabs
+			.wrapper
+				.tabs
+					span.tab Вкладка 1
+					span.tab Вкладка 2
+					span.tab Вкладка 3
+				.tab_content
+					.tab_item Содержимое 1
+					.tab_item Содержимое 1
+					.tab_item Содержимое 1
+
+
 <script>
 $(".wrapper .tab").click(function() {
   $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
