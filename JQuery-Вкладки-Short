@@ -37,3 +37,16 @@ $(".wrapper .tab").click(function() {
 .tab_item { display: none; }
 .tab_item:first-child { display:block; }
 </style>
+
+
+///styl///
+.wrapper .active 
+	color red
+.tab 
+	display inline-block
+	vertical-align bottom
+	cursor pointer
+.tab_item 
+	display none
+.tab_item:first-child 
+	display block
